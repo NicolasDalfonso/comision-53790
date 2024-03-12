@@ -1,47 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
-    margin: 0;
+    font-family: "Roboto", sans-serif;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+}
+.navbar-collapse{
+    display: flex;
+    justify-content: end;
 }
 .navbar-brand img{
     height: 30px;
 }
-main { background-color: black;
-    color: white;
-    padding: 50px;
-    border-bottom: 0px;
+.navbar-nav .nav-link {
+    color: white; 
+}
+.navbar-nav .nav-link:hover {
+    color: rgb(151, 30, 211);
+}
+
+body{
+    background-color: black;
     text-align: center;
+    color: white;
 }
-/* media quaries */
-
-div ul li {
-    font-size: 20px;
-    padding: 20px;
-    margin: 20px;
-    text-align:center;
-    list-style:none;
-}
-.btn.btn-light:hover {
-    background-color: silver;
-    color: black;
-}
-
-.contacto{
+h2,h1{
     padding: 20px;
 }
+.bio{
+    padding-top: 50px;
+}
+.jumbotron {
+    background-image: url(../img/dukiriver.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+.jumbotron h1{
+    padding: 40px;
+}
+.nleft{
+    margin: 30px;
+    margin-top: 50px;
+}
+.dukifoto6{
+    height: 500px;
+}
+.nright{
+    margin: 30px;
+    margin-top: 50px;
+}
+.dukibernabeu{
+    height: 600px;
+}
+.tabla td,
+.tabla th {
+    padding: 15px;
+}
+.ticket-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    color: #212529;     border: 1px solid #adb5bd; 
+    border-radius: 4px; 
+    text-decoration: none; 
+    transition: background-color 0.3s, color 0.3s; 
+  }
+  .ticket-btn:hover {
+    background-color: rgb(141, 79, 199); 
+  }
+  .img-thumbnail{
+height: 400px;
+width: 100%;
+  }
 .fondoalbumes{
     background-image: url(../img/dukimar.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.footer{
+.galeria{
+    padding: 20px;
+    background-image: url(../img/ada.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.formulario{
+   background-image: url(../img/desdeelfindelmundo.jpg);
+   background-size: cover;
+    background-position: center;
+}
+footer{
     padding: 20px;
     color: white;
 }
-.footer .redes a{
-    text-decoration: none;
-    letter-spacing: 20px;
-    font-size: 40px;
-    color: white;
+footer .redes a{
+color: white;
+letter-spacing: 20px;
+font-size: 40px;
 }
