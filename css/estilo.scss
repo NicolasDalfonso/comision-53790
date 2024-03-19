@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+@import "variables";
+
+@mixin body {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+@mixin position {
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: end;
+}
+
+.navbar-brand img {
+  height: 30px;
+}
+
+.navbar-nav .nav-link {
+  color: $blanco;
+
+  &:hover {
+    border: 0;
+    background-image: linear-gradient(150deg, black,purple ,violet);
+    border-radius: 8px
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+body {
+  @include body;
+}
+
+h1,h2,h3,h4 {
+    font-family: "Lily Script One", system-ui;
+  padding: 10px;
+  color:whitesmoke;
+}
+
+.bio {
+  padding-top: 50px;
+}
+
+.jumbotron {
+  background-image: url(../img/dukiriver.jpg);
+  @include position;
+  height: 80vh;
+
+  h1 {
+    padding: 40px;
+  }
+}
+
+.nleft {
+  margin: 30px;
+  margin-top: 50px;
+}
+
+.dukifoto6 {
+  height: 80vh;
+  object-fit: cover;
+}
+
+.nright {
+  margin: 30px;
+  margin-top: 50px;
+}
+
+
+.dukibernabeu {
+  height: 100vh;
+}
+
+.tabla {
+  td,
+  th {
+    padding: $padding;
+  }
+}
+button {
+    
+    border: 0;
+    background-image: linear-gradient(150deg, black,purple ,violet);
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    span {
+      background-color: #111;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: .3s;
+    }
+  
+    &:hover span {
+      background: none;
+    }  
+    }
+  
+ #fechas{
+    background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+ } 
+.img-thumbnail {
+  height: 50vh;
+  width: 100%;
+  // object-fit: cover;
+}
+.d-item img {
+  height: 30vh;
+  width: 20%;
+}
+.fondoalbumes {
+  background-image: url(../img/dukimar.jpg);
+  @include position;
+}
+
+.galeria {
+  padding: $padding;
+  background-image: url(../img/ada.png);
+  @include position;
+}
+
+.formulario {
+  background-image: url(../img/desdeelfindelmundo.jpg);
+  @include position;
+}
+
+footer {
+  padding: $padding;
+  color: $blanco;
+
+  .redes a {
+    color: $blanco;
+    letter-spacing: 20px;
+    font-size: 40px;
+  }
+}
